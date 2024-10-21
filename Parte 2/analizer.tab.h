@@ -54,35 +54,42 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    SELECT = 258,                  /* SELECT  */
-    MAP = 259,                     /* MAP  */
-    MAPNAME = 260,                 /* MAPNAME  */
-    PLAYER = 261,                  /* PLAYER  */
-    PNAME = 262,                   /* PNAME  */
-    NPNAME = 263,                  /* NPNAME  */
-    FINISH_TURN = 264,             /* FINISH_TURN  */
-    FINISH_GAME = 265,             /* FINISH_GAME  */
-    TURN = 266,                    /* TURN  */
-    FORWARD = 267,                 /* FORWARD  */
-    RIGHT = 268,                   /* RIGHT  */
-    REVERSE = 269,                 /* REVERSE  */
-    LEFT = 270,                    /* LEFT  */
-    TURBO = 271,                   /* TURBO  */
-    BRAKE = 272,                   /* BRAKE  */
-    ACCELERATE = 273,              /* ACCELERATE  */
-    SECONDARY_WEAPON_1 = 274,      /* SECONDARY_WEAPON_1  */
-    FIRE_SELECTED_WEAPON = 275,    /* FIRE_SELECTED_WEAPON  */
-    SECONDARY_WEAPON_2 = 276,      /* SECONDARY_WEAPON_2  */
-    MACHINE_GUN = 277,             /* MACHINE_GUN  */
-    FIREBALL_FREEZE_ATTACK = 278,  /* FIREBALL_FREEZE_ATTACK  */
-    BE_INVISIBLE = 279,            /* BE_INVISIBLE  */
-    CHARGED_UP_MINE = 280,         /* CHARGED_UP_MINE  */
-    FREEZE = 281,                  /* FREEZE  */
-    FREEZE_ATTACK = 282,           /* FREEZE_ATTACK  */
-    ENERGY_SHIELD = 283,           /* ENERGY_SHIELD  */
-    MINE = 284,                    /* MINE  */
-    FIRE_REAR_WEAPONS = 285,       /* FIRE_REAR_WEAPONS  */
-    JUMP = 286                     /* JUMP  */
+    RUN = 258,                     /* RUN  */
+    RETREAT = 259,                 /* RETREAT  */
+    DODGE = 260,                   /* DODGE  */
+    ROLL_LEFT = 261,               /* ROLL_LEFT  */
+    ROLL_RIGHT = 262,              /* ROLL_RIGHT  */
+    WEAK_SLASH = 263,              /* WEAK_SLASH  */
+    MEDIUM_SLASH = 264,            /* MEDIUM_SLASH  */
+    STRONG_SLASH = 265,            /* STRONG_SLASH  */
+    WEAK_KICK = 266,               /* WEAK_KICK  */
+    MEDIUM_KICK = 267,             /* MEDIUM_KICK  */
+    STRONG_KICK = 268,             /* STRONG_KICK  */
+    CANCEL_DODGE = 269,            /* CANCEL_DODGE  */
+    RETREAT_RUN = 270,             /* RETREAT_RUN  */
+    RUN_ROLL = 271,                /* RUN_ROLL  */
+    SELECT = 272,                  /* SELECT  */
+    MAP = 273,                     /* MAP  */
+    MAP_NAME = 274,                /* MAP_NAME  */
+    PLAYER_NAME = 275,             /* PLAYER_NAME  */
+    PNAME = 276,                   /* PNAME  */
+    TURN = 277,                    /* TURN  */
+    FORWARD = 278,                 /* FORWARD  */
+    REVERSE = 279,                 /* REVERSE  */
+    RIGHT = 280,                   /* RIGHT  */
+    LEFT = 281,                    /* LEFT  */
+    TURBO = 282,                   /* TURBO  */
+    BRAKE = 283,                   /* BRAKE  */
+    ACCELERATE = 284,              /* ACCELERATE  */
+    MACHINE_GUN = 285,             /* MACHINE_GUN  */
+    SECONDARY_WEAPON_1 = 286,      /* SECONDARY_WEAPON_1  */
+    SECONDARY_WEAPON_2 = 287,      /* SECONDARY_WEAPON_2  */
+    FIREBALL_FREEZE_ATTACK = 288,  /* FIREBALL_FREEZE_ATTACK  */
+    BE_INVISIBLE = 289,            /* BE_INVISIBLE  */
+    FREEZE_ATTACK = 290,           /* FREEZE_ATTACK  */
+    JUMP = 291,                    /* JUMP  */
+    FINISH_GAME = 292,             /* FINISH_GAME  */
+    FINISH_TURN = 293              /* FINISH_TURN  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -91,11 +98,11 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 154 "analizer.y"
+#line 65 "analizer.y"
 
     char *str;
 
-#line 99 "analizer.tab.h"
+#line 106 "analizer.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
