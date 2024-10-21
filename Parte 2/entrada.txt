@@ -1,0 +1,24 @@
+SELECT MAP Paris
+select PLAYER Minion
+select PLAYER Thumper
+select PLAYER Twister
+select PLAYER Warthog
+Turno:
+Thumper ⇐⇐⇒⇒⇑YR2
+Minion ⇑⇒⇓⇓⇓⇑⇒⇑YR2
+Twister ⇐⇐⇒⇒⇑YR2
+Warthog ⇑⇒⇓YR2
+Termina.
+Turno:
+Thumper ⇑⇒⇓⇑⇒⇑YR2
+Minion ⇐⇐⇒⇒⇑YR2
+Twister ⇐⇐⇒YR2
+Warthog ⇑⇒⇒⇑YR2
+Termina.
+Turno:
+Thumper ⇑⇒⇒⇑YR2
+Minion ⇑⇒⇒YR2
+Twister ⇑⇒⇓⇒YR2
+Warthog ⇑⇒⇒YR2
+Termina.
+Fin del juego.
